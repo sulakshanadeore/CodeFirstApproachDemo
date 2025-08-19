@@ -1,0 +1,13 @@
+﻿1) Install Packages
+2)Create the Models(Classes) name must be singular
+3) Create A contextClass --- write properties with DbSet<Classname> PluralClassname
+4) WriteConnectionString(appsettings.json)
+5) Program.cs(DI)
+6) In the Models classes,  create primary key, foreign key etc 
+using Navigation and foreign key properties in the classes &
+in the Context class override the "OnModelCreating method"
+7) command to generate the db:
+1) Add-Migration  AddSubjectTeacherStudentTables
+After successful execution of the above
+2) Update-Database
+So the db is generated with tables
