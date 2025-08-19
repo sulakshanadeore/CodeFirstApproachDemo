@@ -9,6 +9,7 @@ namespace CodeFirstApproachDemo.Models
         public string StudName { get; set; }
         public DateTime BirthDate { get; set; }
 
+        public string City { get; set; }
     }
 
    
