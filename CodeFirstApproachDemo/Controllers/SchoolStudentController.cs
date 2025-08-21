@@ -1,4 +1,5 @@
 ﻿using CodeFirstApproachDemo.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.Eventing.Reader;
@@ -7,8 +8,11 @@ using System.Diagnostics.Eventing.Reader;
 
 namespace CodeFirstApproachDemo.Controllers
 {
+    [EnableCors("AppCors")]
+    //[DisableCors]
     [Route("api/[controller]")]
     [ApiController]
+
     public class SchoolStudentController : ControllerBase
     {
 
